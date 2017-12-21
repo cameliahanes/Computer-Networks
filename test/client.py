@@ -2,15 +2,6 @@
 import socket
 import struct
 
-
-def read_string(source):
-	c = ''
-	s = ""
-	while c != '\n':
-		c = source.recv(1)
-		s += c
-	return s[:-1]
-
 if __name__ == '__main__':
 	
 	host = '127.0.0.1'
